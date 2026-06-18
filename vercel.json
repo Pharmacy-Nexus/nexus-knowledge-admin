@@ -1,0 +1,8 @@
+{
+  "version": 2,
+  "rewrites": [
+    { "source": "/", "destination": "/public/admin.html" },
+    { "source": "/admin.css", "destination": "/public/admin.css" },
+    { "source": "/admin.js", "destination": "/public/admin.js" }
+  ]
+}
