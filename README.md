@@ -1,34 +1,27 @@
-# Nexus Admin GitHub Direct
+# Alex — The Other Side of the Page
 
-Admin page + Vercel API route to upload Knowledge Core files directly to a private GitHub repo.
+Mobile-first interactive reading prototype for *War & Peace*.
 
-## Files
+## Run locally
+Open `index.html` directly, or run a local static server:
 
-```text
-public/admin.html
-public/admin.css
-public/admin.js
-api/github-save.js
-vercel.json
+```bash
+python -m http.server 8000
 ```
 
-## Vercel Environment Variables
+Then open `http://localhost:8000`.
 
-Add these in Vercel Project Settings → Environment Variables:
+## Current prototype
+- Mobile-first responsive layout + enhanced desktop layout
+- Private intro for Alex / Enter 1805
+- The Archivist (neutral / smile states)
+- Reading checkpoint for Chapter 1
+- Local progress saved with `localStorage`
+- Corridor / locked chapter logic
+- Red Thread character wall unlock
+- First archive letter unlock
+- Memory Room stats
+- No backend and no AI API yet
 
-```text
-GITHUB_TOKEN=your_fine_grained_github_token
-GITHUB_OWNER=your_github_username_or_org
-GITHUB_REPO=nexus-knowledge-core
-GITHUB_BRANCH=main
-```
-
-## GitHub Token Permissions
-
-Use a fine-grained personal access token:
-- Repository access: only the private knowledge repo
-- Permissions:
-  - Contents: Read and write
-  - Metadata: Read
-
-Never put the GitHub token inside frontend HTML/JS.
+## Next integration layer
+The static prototype is intentionally separated from AI. A backend can later provide spoiler-safe chapter state, AI dialogue, book indexing, and personalized letters without exposing API keys in the browser.
