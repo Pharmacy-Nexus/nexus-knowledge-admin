@@ -1,27 +1,5 @@
-# Alex — The Other Side of the Page
+# Alex 1805 — Fixed isolated build
 
-Mobile-first interactive reading prototype for *War & Peace*.
+Upload ALL files in this folder together. Recommended: use a separate GitHub repository (for example `alex-1805`) instead of the existing Pharmacy Nexus repository.
 
-## Run locally
-Open `index.html` directly, or run a local static server:
-
-```bash
-python -m http.server 8000
-```
-
-Then open `http://localhost:8000`.
-
-## Current prototype
-- Mobile-first responsive layout + enhanced desktop layout
-- Private intro for Alex / Enter 1805
-- The Archivist (neutral / smile states)
-- Reading checkpoint for Chapter 1
-- Local progress saved with `localStorage`
-- Corridor / locked chapter logic
-- Red Thread character wall unlock
-- First archive letter unlock
-- Memory Room stats
-- No backend and no AI API yet
-
-## Next integration layer
-The static prototype is intentionally separated from AI. A backend can later provide spoiler-safe chapter state, AI dialogue, book indexing, and personalized letters without exposing API keys in the browser.
+If you must use the old repository, put this build in its own subfolder and open that subfolder URL.

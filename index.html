@@ -7,13 +7,13 @@
   <meta name="color-scheme" content="dark" />
   <title>The Other Side of the Page — Alex</title>
   <meta name="description" content="A private interactive reading experience for Alex." />
-  <link rel="preload" as="image" href="assets/hero.webp" fetchpriority="high" />
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="preload" as="image" href="alex1805-assets/hero.webp" fetchpriority="high" />
+  <link rel="stylesheet" href="alex1805.css?v=2" />
 </head>
 <body>
   <div id="app" class="app-shell">
     <section id="gate" class="gate scene active" aria-label="دخول 1805">
-      <img class="scene-bg" src="assets/hero.webp" alt="" />
+      <img class="scene-bg" src="alex1805-assets/hero.webp" alt="" />
       <div class="vignette"></div>
       <div class="snow" aria-hidden="true"></div>
       <div class="gate-copy glass-card">
@@ -35,7 +35,7 @@
 
       <section class="view active" data-view="home" id="homeView">
         <div class="home-hero">
-          <img src="assets/alex-desk.webp" class="scene-bg" alt="" />
+          <img src="alex1805-assets/alex-desk.webp" class="scene-bg" alt="" />
           <div class="vignette soft"></div>
           <div class="home-content">
             <div class="welcome-row">
@@ -48,7 +48,7 @@
 
             <article class="archivist-card glass-card" id="archivistCard">
               <div class="archivist-portrait-wrap">
-                <img id="archivistPortrait" src="assets/archivist-neutral.webp" alt="أمينة الأرشيف" />
+                <img id="archivistPortrait" src="alex1805-assets/archivist-neutral.webp" alt="أمينة الأرشيف" />
                 <div class="portrait-glow"></div>
               </div>
               <div class="archivist-copy">
@@ -59,7 +59,7 @@
             </article>
 
             <article class="continue-card glass-card">
-              <div class="book-thumb"><img src="assets/book.webp" alt="" /></div>
+              <div class="book-thumb"><img src="alex1805-assets/book.webp" alt="" /></div>
               <div class="continue-copy">
                 <div class="row-between"><p class="card-kicker">CURRENT READING</p><span class="status-pill">متاح</span></div>
                 <h3>الحرب والسلام</h3>
@@ -80,7 +80,7 @@
 
       <section class="view" data-view="corridor" id="corridorView">
         <div class="full-scene corridor-scene">
-          <img src="assets/corridor.webp" class="scene-bg" alt="" />
+          <img src="alex1805-assets/corridor.webp" class="scene-bg" alt="" />
           <div class="vignette"></div>
           <div class="scene-heading">
             <p class="eyebrow">THE CORRIDOR</p>
@@ -103,7 +103,7 @@
 
       <section class="view" data-view="threads" id="threadsView">
         <div class="full-scene thread-scene">
-          <img src="assets/red-thread.webp" class="scene-bg" alt="" />
+          <img src="alex1805-assets/red-thread.webp" class="scene-bg" alt="" />
           <div class="vignette soft"></div>
           <div class="scene-heading compact-head">
             <p class="eyebrow">THE RED THREAD</p>
@@ -112,7 +112,7 @@
           </div>
           <div class="thread-overlay" id="threadOverlay">
             <div class="thread-empty glass-card" id="threadEmpty">
-              <img src="assets/frame.webp" alt="" />
+              <img src="alex1805-assets/frame.webp" alt="" />
               <p>أول وجه سيظهر هنا بعد أن تنهي الفصل الأول.</p>
             </div>
             <div class="character-network" id="characterNetwork" hidden>
@@ -130,7 +130,7 @@
 
       <section class="view" data-view="letters" id="lettersView">
         <div class="full-scene letters-scene">
-          <img src="assets/letter-room.webp" class="scene-bg" alt="" />
+          <img src="alex1805-assets/letter-room.webp" class="scene-bg" alt="" />
           <div class="vignette"></div>
           <div class="scene-heading compact-head">
             <p class="eyebrow">LETTERS FROM THE BOOK</p>
@@ -138,7 +138,7 @@
           </div>
           <div class="letters-drawer">
             <button class="letter-item sealed" id="firstLetter">
-              <img src="assets/envelope.webp" alt="" />
+              <img src="alex1805-assets/envelope.webp" alt="" />
               <div><strong id="letterTitle">رسالة مختومة</strong><small id="letterSubtitle">لم تُفتح بعد</small></div>
               <span>←</span>
             </button>
@@ -149,7 +149,7 @@
 
       <section class="view" data-view="memory" id="memoryView">
         <div class="full-scene memory-scene">
-          <img src="assets/memory-room.webp" class="scene-bg" alt="" />
+          <img src="alex1805-assets/memory-room.webp" class="scene-bg" alt="" />
           <div class="vignette soft"></div>
           <div class="scene-heading compact-head">
             <p class="eyebrow">ALEX'S MEMORY ROOM</p>
@@ -187,7 +187,7 @@
 
       <section class="modal archivist-modal" id="talkModal" hidden aria-modal="true" role="dialog">
         <button class="modal-close" data-close>×</button>
-        <img id="talkPortrait" src="assets/archivist-neutral.webp" alt="" />
+        <img id="talkPortrait" src="alex1805-assets/archivist-neutral.webp" alt="" />
         <p class="eyebrow">THE ARCHIVIST</p>
         <h3 id="talkHeading">أنا لا أقرأ بدلًا منك.</h3>
         <p class="modal-copy" id="talkCopy">أنا فقط أحفظ الأشياء التي قد تمر بجوارك دون أن تراها. عندما تنهي الفصل، عد إليّ.</p>
@@ -196,7 +196,7 @@
 
       <section class="modal letter-modal" id="letterModal" hidden aria-modal="true" role="dialog">
         <button class="modal-close" data-close>×</button>
-        <img src="assets/envelope.webp" class="letter-asset" alt="" />
+        <img src="alex1805-assets/envelope.webp" class="letter-asset" alt="" />
         <p class="eyebrow">ARCHIVE LETTER · 001</p>
         <h3>إلى Alex، بعد الباب الأول.</h3>
         <p class="letter-body">دخلت إلى صالون آنا بافلوفنا، وبدأت الأسماء في الظهور. لا تحاول حفظ الجميع الآن. راقب فقط من يتكلم براحة… ومن يختار كلماته بحذر.</p>
@@ -205,7 +205,7 @@
       </section>
 
       <section class="modal unlock-modal" id="unlockModal" hidden aria-modal="true" role="dialog">
-        <div class="unlock-key"><img src="assets/key.webp" alt="" /></div>
+        <div class="unlock-key"><img src="alex1805-assets/key.webp" alt="" /></div>
         <p class="eyebrow">ARCHIVE UPDATED</p>
         <h3>شيء ما تحرّك في القصر.</h3>
         <p class="modal-copy">ظهرت أول خيوط على الحائط، ووصلت رسالة إلى مكتبك.</p>
@@ -221,6 +221,6 @@
     </aside>
   </div>
 
-  <script src="app.js"></script>
+  <script src="alex1805.js?v=2"></script>
 </body>
 </html>
